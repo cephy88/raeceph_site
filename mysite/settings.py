@@ -27,9 +27,12 @@ SECRET_KEY = 'o9&-6ti4jte2f-l$9y5r=8cjqz9qg1y9%a)g%*_@jim)zr#2*#'
 DEBUG = False
 
 ALLOWED_HOSTS = ['raeceph-website.herokuapp.com', '127.0.0.1']
+#['raeceph-website.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',

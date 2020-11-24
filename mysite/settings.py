@@ -24,8 +24,9 @@ SECRET_KEY = 'o9&-6ti4jte2f-l$9y5r=8cjqz9qg1y9%a)g%*_@jim)zr#2*#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+# DEBUG = True
 
-ALLOWED_HOSTS = ['raeceph-website.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = []
 #['raeceph-website.herokuapp.com', '127.0.0.1']
 
 

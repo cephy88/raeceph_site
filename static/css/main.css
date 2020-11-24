@@ -1,31 +1,64 @@
-body{
-	background-color:#F8F8F8!important;
-}
-
-#profile-wrapper{
+.decode-text{
+	width: 100%;
+	font-size: 30px;
 	text-align: center;
-}
-
-#profile-pic{
-	width:150px;
-	height: 150px;
-	border-radius: 50%;
-	margin-left: auto;
-  	margin-right: auto;
-}
-
-ul{
-	padding: 0;
-    list-style-type: none;
-}
-
-
-.social-links ul, li{
-	list-style-type:none;
-	display: inline-block;
-}
-
-.social{
-	width:20px;
-	height: 20px;
-}
+  }
+  .space{
+	  display:inline-block;
+	  width:10px;
+  }
+  .text-animation{
+	  display:inline-block;
+	position:relative;
+	  color: transparent;
+	  text-transform:uppercase;
+	  &:before{
+		  content: '';
+		  color: black;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  background: #0e182d;
+		  width: 0;
+		  height: 1.2em;
+		  -webkit-transform: translate(-50%,-55%);
+		  -ms-transform: translate(-50%,-55%);
+		  transform: translate(-50%,-55%);
+	  }
+  
+	  &.state-1{
+		  &:before{
+				width:1px;
+		  }
+	  }
+	  &.state-2{
+		  &:before{
+				width:.9em;
+		  }
+	  }
+	  &.state-3{
+		  color: black;
+		  &:before{
+				width:0;
+		  }
+	  }
+	
+  }
+  
+  
+  // demo styles
+  #refresh{
+	position:absolute;
+	top:20px;
+	left:20px;
+	cursor:pointer;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+  div{
+	font-family: 'Share Tech Mono', monospace;
+  }
+  body{
+	height: 100vh;
+	align-items: center;
+	display: flex;
+  }
